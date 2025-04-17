@@ -155,9 +155,99 @@ $v_y=\frac{12}{3.8+0.2}=\frac{12}{4}=3\ \text{cm/s}$
 
 Al reducir la velocidad del eje Y a $3\ \text{cm/s}$, se asegura que ambos ejes terminen su movimiento en $4.2\ \text{s}$, logrando una trayectoria interpolada y sincronizada.
 
+## MODELADO CURVA B
+
+$\frac{t_a}{2}<t<t_a$
+
+**Condiciones de frontera**
+
+1. $v\left(\frac{t_a}{2}\right)=\frac{v_m}{2}$  
+2. $v(t_a)=v_m$  
+3. $a(t_a)=\frac{dv}{dt}(t_a)=0$
+
+**Derivada general:**
+
+$$
+v(t)=C_1t^2+C_2t+C_3 \Rightarrow a(t)=\frac{dv}{dt}=2C_1t+C_2
+$$
+
+**Aplicamos condiciones:**
+
+**1.**  
+$C_1\left(\frac{t_a}{2}\right)^2+C_2\left(\frac{t_a}{2}\right)+C_3=\frac{v_m}{2}$
+
+$C_1\frac{t_a^2}{4}+C_2\frac{t_a}{2}+C_3=\frac{v_m}{2}\tag{1}$
+
+**2.**  
+$C_1t_a^2+C_2t_a+C_3=v_m\tag{2}$
 
 
+**3.**  
+$a(t_a)=2C_1t_a+C_2=0\Rightarrow C_2=-2C_1t_a\tag{3}$
 
+**Sustituimos en las ecuaciones (1) y (2):**
+
+Usamos (3) en (1) y (2).
+
+Sustituimos en (1):
+
+$$
+C_1\frac{t_a^2}{4}-2C_1t_a\cdot\frac{t_a}{2}+C_3=\frac{v_m}{2}
+$$
+
+$$
+C_1\frac{t_a^2}{4}-C_1t_a^2+C_3=\frac{v_m}{2}
+$$
+
+$-\frac{3}{4}C_1t_a^2+C_3=\frac{v_m}{2}\tag{4}$
+
+
+**Sustituimos en (2):**
+
+$C_1t_a^2-2C_1t_a^2+C_3=v_m \Rightarrow -C_1t_a^2+C_3=v_m \tag{5}$
+
+**Restamos (5)-(4):**
+
+$$
+(-C_1t_a^2+C_3)-\left(-\frac{3}{4}C_1t_a^2+C_3\right)=v_m-\frac{v_m}{2}
+$$
+
+$$
+-\frac{1}{4}C_1t_a^2=\frac{v_m}{2} \Rightarrow C_1=-\frac{2v_m}{t_a^2}
+$$
+
+ **Coeficientes:**
+
+$$
+C_2=-2C_1t_a=-2\left(-\frac{2v_m}{t_a^2}\right)t_a=\frac{4v_m}{t_a}
+$$
+
+$$
+C_3=v_m+C_1t_a^2=v_m-2v_m=-v_m
+$$
+
+**Resultado con coeficientes:**
+
+$$
+v_B(t)=-\frac{2v_m}{t_a^2}t^2+\frac{4v_m}{t_a}t-v_m
+$$
+
+ó
+
+
+Recordando que:
+
+$$
+(t_a-t)^2=t^2-2t_at+t_a^2
+$$
+
+Entonces:
+
+$$
+v_B(t)=v_m-\frac{2v_m}{t_a^2}(t_a-t)^2
+$$
+
+es **equivalente** al polinomio anterior.
 
 
 
