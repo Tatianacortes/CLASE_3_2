@@ -246,5 +246,56 @@ $$
 
 es **equivalente** al polinomio anterior.
 
+## MODELADO C
+
+$t_a<t<t_m$
+
+
+Modelamos este tramo con:
+
+$$
+v_C(t)=C_1t^2+C_2t+C_3
+$$
+
+**Condiciones de frontera:**
+
+$$v(t_a)=v_m$$  
+$$v(t_m)=v_m$$  
+$$a(t)=\frac{dv}{dt}=0$$ en todo el tramo
+
+Derivada general:
+
+$$
+a(t)=\frac{dv}{dt}=2C_1t+C_2
+$$
+
+Aceleración constante igual a cero:
+
+$$
+2C_1t+C_2=0
+$$
+
+Por lo tanto:
+
+$$
+C_1=0,\quad C_2=0
+$$
+
+**Resultado:**
+
+Con \(C_1=0\) y \(C_2=0\), el modelo se reduce a:
+
+$$
+v_C(t)=C_3
+$$
+
+Resultado final:
+
+$$
+\boxed{v_C(t)=v_m}
+$$
+
+
+
 
 
