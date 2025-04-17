@@ -173,17 +173,14 @@ $$
 
 **Aplicamos condiciones:**
 
-**1.**  
-$C_1\left(\frac{t_a}{2}\right)^2+C_2\left(\frac{t_a}{2}\right)+C_3=\frac{v_m}{2}$
+**1.**  $C_1\left(\frac{t_a}{2}\right)^2+C_2\left(\frac{t_a}{2}\right)+C_3=\frac{v_m}{2}$
 
 $C_1\frac{t_a^2}{4}+C_2\frac{t_a}{2}+C_3=\frac{v_m}{2}\tag{1}$
 
-**2.**  
-$C_1t_a^2+C_2t_a+C_3=v_m\tag{2}$
+**2.**  $C_1t_a^2+C_2t_a+C_3=v_m\tag{2}$
 
 
-**3.**  
-$a(t_a)=2C_1t_a+C_2=0\Rightarrow C_2=-2C_1t_a\tag{3}$
+**3.**  $a(t_a)=2C_1t_a+C_2=0\Rightarrow C_2=-2C_1t_a\tag{3}$
 
 **Sustituimos en las ecuaciones (1) y (2):**
 
