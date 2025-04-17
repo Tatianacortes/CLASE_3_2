@@ -295,6 +295,26 @@ $$
 \boxed{v_C(t)=v_m}
 $$
 
+## EJEMPLO NUMERICO
+
+
+Se grafica el perfil de velocidad tipo S compuesto por tres tramos diferenciados: aceleración (A), desaceleración (B) y velocidad constante (C), para simular un movimiento suave y continuo.
+
+Los parámetros utilizados para construir el perfil son:
+
+- Velocidad máxima: $v_m = 10\,\text{in/s}$
+- Tiempo total de aceleración/desaceleración: $t_a = 4\,\text{s}$
+- Tiempo total de movimiento: $t_m = 8\,\text{s}$
+
+Se modelan tres tramos de la siguiente manera:
+
+- **Tramo A** ($0 \leq t < \frac{t_a}{2}$): aceleración creciente, modelada como una parábola ascendente.
+- **Tramo B** ($\frac{t_a}{2} < t \leq t_a$): aceleración decreciente hasta cero, modelada como una parábola descendente.
+- **Tramo C** ($t_a < t \leq t_m$): velocidad constante igual a $v_m$.
+
+ ![Figura de prueba](IMAGES/tramo.png)
+
+
 
 
 
