@@ -70,5 +70,5 @@ $s_{0C}(t) = 493.49 + 32 \cdot 70 = 2733.49\ \text{cts}$
 Con:
 - $ v_{max} = 10\ \text{in/s} $
 - $ t_a = 4\ \text{s} $
-
+ ![Figura de prueba](IMAGES/curvas.png)
 
